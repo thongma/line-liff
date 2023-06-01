@@ -56,11 +56,18 @@
 
         async function scanCode() {}
 
-        function openWindow() {}
+        function openWindow() {
+
+
+        }
 
         async function getFriendship() {}
 
-        async function sendMsg() {}
+        async function sendMsg() {
+            const liffUrl = `https://liff.line.me/${process.env.LINE_LIFF_ID}`;
+            await context.sendText(liffUrl);
+
+        }
 
         function getContext() {}
 
